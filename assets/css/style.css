@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/LATO/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Avengers;
+    src: url(../fonts/AVENGERS/AVENGEANCE\ HEROIC\ AVENGER\ BD.ttf);
+}
+@font-face {
+    font-family: Comics;
+    src: url(../fonts/COMICS/Comics\ Tricks.ttf);
+}
+/* BODY */
+body {
+    font-family: Open-Sans;
+    margin: 0 auto;
+    padding: 0 auto;
+    size-adjust: 100%;
+}
+main {
+    margin-top: 200px;
+}
+h1 {
+    font-family: Avengers;
+    color: black;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: Avengers;
+    color: rgb(33, 93, 163);
+    font-size: 30px;
+    margin-top: 5rem;
+}
+h3 {
+    text-align: center;
+    font-family: Lato-Regular;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+h4 {
+    height:40px;
+    margin: 2px;
+    align-items: center;
+    text-align: center;
+    font-family: Avengers;
+}
+p {
+    color: rgb(0, 0, 0);
+    font-family: Lato-Regular;
+    margin-bottom: 2rem;
+}
+a {
+    color: rgb(203, 1, 1);
+    text-decoration: none; 
+}
+li {
+    list-style: none;
+}
+.btn-primary {
+    margin: 2rem;
+    font-family: Lato-Regular;
+    color: white;
+    background:-webkit-linear-gradient(top,rgb(203, 1, 1) 30%,rgb(33, 93, 163) 70%);
+    padding: 1rem;
+    width: 18rem;
+    justify-content: center;
+    align-content: center;
+}
+/* HEADER */
+.title {
+    background-color: white;
+}
+.logo-header {
+    display: flex;
+    height:100px;
+    width:100%;
+    margin-left: 1%;
+}
+.NavBar {
+    background: url(../img/deco-MDC-Comics/bandeau-degrader.jpg);
+}
+/* .navbar-brand {
+    height: 50px; 
+} */
+#navbarNav {
+    margin-right: 5rem;
+   
+}
+/* BTN NavBar */
+.nav-link {
+    color: white;
+    font-family: Avengers;
+    padding: 20px;
+    align-items: center; 
+}
+.DCheader a:hover {
+    color: rgb(33, 93, 161); 
+}
+.MARVELheader a:hover {
+    color: rgb(203, 1, 1); 
+}
+.BTNheader a:hover {
+    background:-webkit-linear-gradient(top,rgb(203, 1, 1) 40%,rgb(33, 93, 163) 60%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+.navbar-toggler-icon {
+    color: #EDD154;
+}
+.collapse a {
+font-size: 25px;
+line-height: 20px;
+margin-right: 10px;
+margin-left: 10px;
+}
+#navbarNav :not(:first-child) {
+border-left:  1px solid rgb(255, 255, 255);
+}
+
+/* MAIN */
+
+/* Carousel */
+.carousel-inner {
+    margin-top: 10px;
+}
+.carousel-item {
+    max-height: 700px;
+}
+/* HISTOIRE UNIVERS COMICS */
+.hist-marvel img {
+width: 250px;
+height: 200px;
+}
+.hist-dc-comics img {
+width: 250px;
+height: 200px;
+}
+.Marvel {
+    margin: 2rem;
+    font-family: Lato-Regular;
+    color: white;
+    background: linear-gradient(rgb(203, 1, 1),rgb(140, 140, 140));
+    padding: 1rem;
+    width: 18rem;
+    justify-content: center;
+    align-content: center;
+}
+.DC {
+    margin: 2rem;
+    font-family: Lato-Regular;
+    color: white;
+    background: linear-gradient(hwb(0 0% 100%),rgb(33, 93, 163));
+    padding: 1rem;
+    width: 18rem;
+    justify-content: center;
+    align-content: center;
+}
+.DC:hover {
+    color: rgb(0, 119, 255);
+}
+.Marvel:hover {
+    color: rgb(255, 0, 0);
+}
+/* Actualités */
+.Actus img {
+    height: 250px;
+    width: 150px;
+}
+/* Univers Marvel */
+.marvel img {
+    height: 250px;
+    width: 150px;
+}
+/* Univers DC Comics */
+.dc-comics img {
+    height: 250px;
+    width: 150px;
+}
+/* Bons Plans */
+.bons-plans img {
+    height: 250px;
+    width: 150px;
+} 
+/* FOOTER */
+footer {
+    
+    display: flex ;
+    background: url(../img/deco-MDC-Comics/bandeau-degrader.jpg);
+    background-size: cover;
+    list-style: none;
+    align-items: center;
+}
+footer p {
+    color: white;
+    font-family:Avengers ;
+}
+.MDC_comics {
+    height: 10rem;
+    align-items: center;
+    margin: 2rem;
+}
+.logo img{
+    height: 5rem;
+    width: 5rem;
+}
+.prestations {
+    font-size: 20px;
+}
+
+.contact {
+    font-size: 17px;
+    border-left: solid 1px white;
+    font-family: Avengers;
+    padding-left: 1rem;
+    font-size: 17px;
+}
+.contact img {
+    display: inline;
+    justify-content: left;
+    height: 30px;
+    width: 30px;
+}
+.CGV {
+    display: flex;
+    justify-content: center;
+   height: auto;
+}
+.CGV p {
+    margin-right: 10px;
+}
+.CGV li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: Avengers;
+}
+.CGV a:hover {
+    color: rgb(33, 93, 163);
+}
+
+
+
