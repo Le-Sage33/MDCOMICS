@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/LATO/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Avengers;
+    src: url(../fonts/AVENGERS/AVENGEANCE\ HEROIC\ AVENGER\ BD.ttf);
+}
+@font-face {
+    font-family: Shield;
+    src: url(../fonts/STAR-SHIELD/Star\ Shield.ttf);
+}
+
+
+/* BODY */
+body {
+    font-family: Lato-Regular;
+    margin: 0 auto;
+    padding: 0 auto;
+    size-adjust: 100%;
+}
+h1, h2, h4 {
+    font-family: Avengers;
+    align-items: center;
+    text-align: center;
+}
+main {
+    margin-top: 200px;
+}
+h1 {
+    display: flex;
+    margin: auto;
+    color: white;
+}
+h2 {
+   font-size: 50px;
+   color: white;
+    margin: 2px;   
+}
+h3 {
+    text-align: center;
+    font-family: Shield;
+    font-size: 30px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: Lato-Regular;
+    margin-bottom: 2rem;
+}
+a {
+    color: rgb(203, 1, 1);
+    text-decoration: none; 
+}
+li {
+    list-style: none;
+}
+.btn-primary {
+    margin: 2rem;
+    font-family: Shield;
+    font-size: 30px;
+    color: white;
+    background:-webkit-linear-gradient(top,rgb(203, 1, 1) 30%,rgb(33, 93, 163) 70%);
+    padding: 1rem;
+    width: 18rem;
+    justify-content: center;
+    align-content: center;
+}
+.btn:hover {
+    background:-webkit-linear-gradient(top,rgb(203, 1, 1) 40%,rgb(33, 93, 163) 60%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+/* HEADER */
+.title {
+    
+    background: url(/assets/img/deco-MDC-Comics/bandeau-degrader.jpg);
+}
+.logo-header {
+    display: flex;
+    height:100px;
+    width:100%;
+    margin-left: 1%;
+}
+/* HISTOIRE UNIVERS COMICS */
+.hist-marvel img {
+    width: 250px;
+    height: 200px;
+    }
+    .hist-dc-comics img {
+    width: 250px;
+    height: 200px;
+    }
+    .Marvel {
+        margin: 2rem;
+        font-family: Shield;
+        font-size: 30px;
+        color: white;
+        background: linear-gradient(rgb(203, 1, 1),rgb(140, 140, 140));
+        padding: 1rem;
+        width: 18rem;
+        justify-content: center;
+        align-content: center;
+    }
+    .Marvel:hover {
+        color: rgb(203, 1, 1);
+    }
+    .DC {
+        margin: 2rem;
+        font-family: Shield;
+        font-size: 30px;
+        color: white;
+        background: linear-gradient(hwb(0 0% 100%),rgb(33, 93, 163));
+        padding: 1rem;
+        width: 18rem;
+        justify-content: center;
+        align-content: center;
+    }
+    .DC:hover {  
+        color: rgb(33, 93, 163);
+    }
+
+/* FOOTER */
+footer {
+    
+    display: flex ;
+    background: url(../img/deco-MDC-Comics/bandeau-degrader.jpg);
+    background-size: cover;
+    list-style: none;
+    align-items: center;
+}
+footer p {
+    color: white;
+    font-family:Avengers ;
+}
+.MDC_comics {
+   
+    align-items: center;
+    margin: 2rem;
+}
+.logo img{
+    height: 5rem;
+    width: 5rem;
+}
+.prestations {
+    font-size: 20px;
+}
+
+.contact {
+    font-size: 17px;
+    border-left: solid 1px white;
+    font-family: Avengers;
+    padding-left: 1rem;
+    font-size: 17px;
+}
+.contact img {
+    display: inline;
+    justify-content: left;
+    height: 30px;
+    width: 30px;
+}
+.CGV {
+    display: flex;
+    justify-content: center;
+   height: auto;
+}
+.CGV p {
+    margin-right: 10px;
+}
+.CGV li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: Avengers;
+}
+.CGV a:hover {
+    color: rgb(33, 93, 163);
+}

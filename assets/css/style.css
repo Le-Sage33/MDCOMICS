@@ -7,50 +7,47 @@
     src: url(../fonts/AVENGERS/AVENGEANCE\ HEROIC\ AVENGER\ BD.ttf);
 }
 @font-face {
-    font-family: Avengers;
-    src: url(../fonts/);
+    font-family: Shield;
+    src: url(../fonts/STAR-SHIELD/Star\ Shield.ttf);
 }
 
 
 /* BODY */
 body {
-    font-family: Open-Sans;
+    font-family: Lato-Regular;
     margin: 0 auto;
     padding: 0 auto;
     size-adjust: 100%;
+}
+h1, h2, h3 {
+    font-family: Avengers;
+    align-items: center;
+    text-align: center;
 }
 main {
     margin-top: 200px;
 }
 h1 {
-    font-family: Avengers;
-    color: black;
     display: flex;
     margin: auto;
-    align-items: center;
-    text-align: center;
 }
 h2 {
-    font-size: 2rem;
-    text-align: center;
-    font-family: Avengers;
-    color: rgb(33, 93, 163);
-    font-size: 30px;
-    margin-top: 5rem;
+   font-size: 30px;
+    margin: 2px;     
 }
 h3 {
-    text-align: center;
-    font-family: Lato-Regular;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 2rem;
+    font-size: 30px;
+    margin-top: 5rem;
+    
 }
 h4 {
-    height:40px;
-    margin: 2px;
-    align-items: center;
     text-align: center;
-    font-family: Avengers;
+    margin-top: 5px;
+    font-family: Shield;
+    font-size: 30px;
 }
+
 p {
     color: rgb(0, 0, 0);
     font-family: Lato-Regular;
@@ -65,7 +62,8 @@ li {
 }
 .btn-primary {
     margin: 2rem;
-    font-family: Lato-Regular;
+    font-family: Shield;
+    font-size: 30px;
     color: white;
     background:-webkit-linear-gradient(top,rgb(203, 1, 1) 30%,rgb(33, 93, 163) 70%);
     padding: 1rem;
@@ -73,6 +71,14 @@ li {
     justify-content: center;
     align-content: center;
 }
+.btn:hover {
+    background:-webkit-linear-gradient(top,rgb(203, 1, 1) 40%,rgb(33, 93, 163) 60%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+
 /* HEADER */
 .title {
     background-color: white;
@@ -87,22 +93,33 @@ li {
     background: url(../img/deco-MDC-Comics/bandeau-degrader.jpg);
     background-size:cover;
 }
-/* .navbar-brand {
-    height: 50px; 
-} */
+
 #navbarNav {
     margin-right: 5rem;
    
 }
 /* BTN NavBar */
+.login {
+    display: flex;
+    align-items: center;  
+}
+
+.btn-login {
+    margin-right: 20px;
+    color: white;
+    font-family: Avengers;
+    font-size: 30px;
+    align-items: center;  
+}
 .nav-link {
     color: white;
     font-family: Avengers;
+    font-size: 25px;
     padding: 20px;
     align-items: center; 
 }
 .DCheader a:hover {
-    color: rgb(33, 93, 161); 
+    color: rgb(33, 93, 163); 
 }
 .MARVELheader a:hover {
     color: rgb(203, 1, 1); 
@@ -113,27 +130,33 @@ li {
     -webkit-background-clip:text;
     color:transparent;
 }
-.navbar-toggler-icon {
-    color: #EDD154;
-}
 .collapse a {
-font-size: 25px;
-line-height: 20px;
+font-size: 30px;
+line-height: 30px;
 margin-right: 10px;
 margin-left: 10px;
+
 }
 #navbarNav :not(:first-child) {
 border-left:  1px solid rgb(255, 255, 255);
+}
+/* Hamburger NavBar */
+.navbar-toggler {
+    border-color:  rgb(203, 1, 1);
+}
+.navbar-toggler-icon {
+    background-image:url(../img/deco-MDC-Comics/logo-MDC-style-marvel.png);
 }
 
 /* MAIN */
 
 /* Carousel */
+
 .carousel-inner {
     margin-top: 10px;
 }
 .carousel-item {
-    max-height: 700px;
+   max-height: 700px;
 }
 /* HISTOIRE UNIVERS COMICS */
 .hist-marvel img {
@@ -146,7 +169,8 @@ height: 200px;
 }
 .Marvel {
     margin: 2rem;
-    font-family: Lato-Regular;
+    font-family: Shield;
+    font-size: 30px;
     color: white;
     background: linear-gradient(rgb(203, 1, 1),rgb(140, 140, 140));
     padding: 1rem;
@@ -154,9 +178,13 @@ height: 200px;
     justify-content: center;
     align-content: center;
 }
+.Marvel:hover {
+    color: rgb(203, 1, 1);
+}
 .DC {
     margin: 2rem;
-    font-family: Lato-Regular;
+    font-family: Shield;
+    font-size: 30px;
     color: white;
     background: linear-gradient(hwb(0 0% 100%),rgb(33, 93, 163));
     padding: 1rem;
@@ -164,31 +192,32 @@ height: 200px;
     justify-content: center;
     align-content: center;
 }
-.DC:hover {
-    color: rgb(0, 119, 255);
-}
-.Marvel:hover {
-    color: rgb(255, 0, 0);
+.DC:hover {  
+    color: rgb(33, 93, 163);
 }
 /* Actualités */
 .Actus img {
     height: 250px;
     width: 150px;
+    margin-bottom: 10px;
 }
 /* Univers Marvel */
 .marvel img {
     height: 250px;
     width: 150px;
+    margin-bottom: 10px;
 }
 /* Univers DC Comics */
 .dc-comics img {
     height: 250px;
     width: 150px;
+    margin-bottom: 10px;
 }
 /* Bons Plans */
 .bons-plans img {
     height: 250px;
     width: 150px;
+    margin-bottom: 10px;
 } 
 /* FOOTER */
 footer {
