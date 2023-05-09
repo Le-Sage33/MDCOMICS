@@ -19,7 +19,7 @@ body {
     padding: 0 auto;
     size-adjust: 100%;
 }
-h1, h2, h4 {
+h1, h2, h3 {
     font-family: Avengers;
     align-items: center;
     text-align: center;
@@ -30,15 +30,28 @@ main {
 h1 {
     display: flex;
     margin: auto;
-    color: white;
+    background:-webkit-linear-gradient(top,rgb(203, 1, 1) 40%,rgb(33, 93, 163) 20%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
 }
 h2 {
-   font-size: 50px;
-   color: white;
-    margin: 2px;   
+   font-size: 30px;
+    padding-right: 10px;
+    background:-webkit-linear-gradient(top,rgb(203, 1, 1) 40%,rgb(33, 93, 163) 60%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
 }
 h3 {
+    font-size: 2rem;
+    font-size: 30px;
+    margin-top: 5rem;
+    
+}
+h4 {
     text-align: center;
+    margin-top: 5px;
     font-family: Shield;
     font-size: 30px;
 }
@@ -72,10 +85,12 @@ li {
     -webkit-background-clip:text;
     color:transparent;
 }
+
+
 /* HEADER */
 .title {
+    background-color: rgb(0, 0, 0);
     
-    background: url(/assets/img/deco-MDC-Comics/bandeau-degrader.jpg);
 }
 .logo-header {
     display: flex;
@@ -83,43 +98,105 @@ li {
     width:100%;
     margin-left: 1%;
 }
+.NavBar {
+    background: url(../img/deco-MDC-Comics/bandeau-degrader.jpg);
+    background-size:cover;
+}
+
+#navbarNav {
+    margin-right: 5rem;
+   
+}
+/* BTN NavBar */
+.login {
+    display: flex;
+    align-items: center; 
+     
+}
+
+.btn-login {
+    margin-left: 20px;
+    padding: 10px;
+    color: white;
+    font-family: Avengers;
+    font-size: 30px;
+    align-items: center;  
+}
+.nav-link {
+    color: white;
+    font-family: Avengers;
+    font-size: 25px;
+    padding: 20px;
+    align-items: center; 
+}
+.DCheader a:hover {
+    color: rgb(33, 93, 163); 
+}
+.MARVELheader a:hover {
+    color: rgb(203, 1, 1); 
+}
+.BTNheader a:hover {
+    background:-webkit-linear-gradient(top,rgb(203, 1, 1) 40%,rgb(33, 93, 163) 60%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+.collapse a {
+font-size: 30px;
+line-height: 30px;
+margin-right: 10px;
+margin-left: 10px;
+
+}
+#navbarNav :not(:first-child) {
+border-left:  1px solid rgb(255, 255, 255);
+}
+/* Hamburger NavBar */
+.navbar-toggler {
+    border-color:  rgb(203, 1, 1);
+}
+.navbar-toggler-icon {
+    background-image:url(../img/deco-MDC-Comics/logo-MDC-Comics.png);
+}
+
+/* MAIN */
 /* HISTOIRE UNIVERS COMICS */
 .hist-marvel img {
     width: 250px;
     height: 200px;
-    }
-    .hist-dc-comics img {
+}
+.hist-dc-comics img {
     width: 250px;
     height: 200px;
-    }
-    .Marvel {
-        margin: 2rem;
-        font-family: Shield;
-        font-size: 30px;
-        color: white;
-        background: linear-gradient(rgb(203, 1, 1),rgb(140, 140, 140));
-        padding: 1rem;
-        width: 18rem;
-        justify-content: center;
-        align-content: center;
-    }
-    .Marvel:hover {
-        color: rgb(203, 1, 1);
-    }
-    .DC {
-        margin: 2rem;
-        font-family: Shield;
-        font-size: 30px;
-        color: white;
-        background: linear-gradient(hwb(0 0% 100%),rgb(33, 93, 163));
-        padding: 1rem;
-        width: 18rem;
-        justify-content: center;
-        align-content: center;
-    }
-    .DC:hover {  
-        color: rgb(33, 93, 163);
-    }
+}
+.Marvel {
+    margin: 2rem;
+    font-family: Shield;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(rgb(203, 1, 1),rgb(140, 140, 140));
+    padding: 1rem;
+    width: 18rem;
+    justify-content: center;
+    align-content: center;
+}
+.Marvel:hover {
+    color: rgb(203, 1, 1);
+}
+.DC {
+    margin: 2rem;
+    font-family: Shield;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(hwb(0 0% 100%),rgb(33, 93, 163));
+    padding: 1rem;
+    width: 18rem;
+    justify-content: center;
+    align-content: center;
+}
+.DC:hover {  
+    color: rgb(33, 93, 163);
+}
 
 /* FOOTER */
 footer {
@@ -132,7 +209,7 @@ footer {
 }
 footer p {
     color: white;
-    font-family:Avengers ;
+    font-family: Shield ;
 }
 .MDC_comics {
    
@@ -150,7 +227,7 @@ footer p {
 .contact {
     font-size: 17px;
     border-left: solid 1px white;
-    font-family: Avengers;
+    font-family: Shield;
     padding-left: 1rem;
     font-size: 17px;
 }
@@ -172,7 +249,7 @@ footer p {
     color: white;
     text-decoration: none;
     list-style: none;
-    font-family: Avengers;
+    font-family: Shield;
 }
 .CGV a:hover {
     color: rgb(33, 93, 163);

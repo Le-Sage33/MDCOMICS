@@ -105,7 +105,8 @@ li {
 }
 
 .btn-login {
-    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
     color: white;
     font-family: Avengers;
     font-size: 30px;
@@ -145,7 +146,7 @@ border-left:  1px solid rgb(255, 255, 255);
     border-color:  rgb(203, 1, 1);
 }
 .navbar-toggler-icon {
-    background-image:url(../img/deco-MDC-Comics/logo-MDC-style-marvel.png);
+    background-image:url(../img/deco-MDC-Comics/logo-MDC-Comics.png);
 }
 
 /* MAIN */
@@ -160,12 +161,12 @@ border-left:  1px solid rgb(255, 255, 255);
 }
 /* HISTOIRE UNIVERS COMICS */
 .hist-marvel img {
-width: 250px;
-height: 200px;
+    width: 250px;
+    height: 200px;
 }
 .hist-dc-comics img {
-width: 250px;
-height: 200px;
+    width: 250px;
+    height: 200px;
 }
 .Marvel {
     margin: 2rem;
